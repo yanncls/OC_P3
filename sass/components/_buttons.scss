@@ -1,0 +1,18 @@
+.explorer {
+  @include center-item;
+  padding-bottom: 2rem;
+  &__btn {
+    width: 14rem;
+    height: 3rem;
+    background-image: linear-gradient(
+      to bottom,
+      $color-secondary 0%,
+      $color-secondary 20%,
+      $color-primary 100%
+    );
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: $font-size-btn;
+  }
+}

@@ -1,0 +1,39 @@
+.head {
+  @include column-item;
+}
+
+.location {
+  @include center-item;
+  @include background-color-location;
+  @include logo-line-shadow;
+  &__marker {
+    display: flex;
+    align-items: center;
+    &__input {
+      @include background-color-location;
+      @include logo-line-shadow;
+      width: 100%;
+      font-weight: bold;
+      text-align: center;
+      border: none;
+      outline: none;
+      height: 50px;
+      font-size: $font-size-input;
+      width: 160px;
+    }
+  }
+}
+
+.description {
+  @include center-item;
+  @include column-item;
+  @include background-color-details;
+  &__title {
+    @include center-text;
+    margin: 20px 10px 10px 10px;
+  }
+  &__paragraph {
+    @include center-text;
+    margin: 10px 20px 30px 20px;
+  }
+}

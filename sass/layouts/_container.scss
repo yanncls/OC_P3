@@ -1,0 +1,110 @@
+// fonction display
+.fonction {
+  height: $fonction-height;
+  @include column-item;
+  &__title {
+    @include margin-txt;
+    @include txt-titles-padding-top;
+  }
+  &__border {
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    @include background-color-fonction;
+    @include row-item;
+    @include margin-item;
+    @include border-item;
+    position: relative;
+    justify-content: center;
+    &__fa {
+      position: absolute;
+      left: 50px;
+    }
+    &:hover,
+    &:focus {
+      @include content-lighten;
+    }
+    &__num {
+      position: absolute;
+      left: -15px;
+      border-radius: 15px;
+      width: 30px;
+      height: 30px;
+      background-color: $color-primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    &__text {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.center-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// menus display
+.container {
+  @include background-color-details;
+  height: 75rem;
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card {
+    width: 95%;
+    background-color: $background-html;
+    @include margin-item;
+    @include cards-radius;
+    > img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      @include img-radius;
+    }
+    &__desc {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      div:first-child {
+        margin-left: 1rem;
+        position: relative;
+      }
+      div:nth-child(2) {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .fas {
+          position: absolute;
+          opacity: 0;
+          &:hover {
+            transition: 1s;
+            color: red;
+            opacity: 0.5;
+          }
+        }
+      }
+      .far {
+        position: relative;
+      }
+    }
+  }
+  &__title {
+    @include margin-txt;
+    @include txt-titles-padding-top;
+  }
+}
+
+// span {
+//   position: relative;
+//   left: 300px;
+//   bottom: 45px;
+// }

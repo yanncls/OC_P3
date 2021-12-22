@@ -85,10 +85,27 @@
         .fas {
           position: absolute;
           opacity: 0;
-          &:hover {
-            transition: 1s;
-            color: red;
-            opacity: 0.5;
+          font-size: 24px;
+          vertical-align: middle;
+          &:hover,
+          &:active {
+            transition: 0.2s ease;
+            transform: scale(1.01, 1.01);
+            background: -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              from($color-secondary),
+              to($color-primary)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 1;
+          }
+        }
+        .far {
+          vertical-align: middle;
+          font-size: 25px;
           }
         }
       }

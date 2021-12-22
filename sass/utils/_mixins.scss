@@ -1,0 +1,69 @@
+@mixin center-item {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin column-item {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin margin-item {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin row-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+@mixin background-color-details {
+  background-color: darken($background-html, 5%);
+}
+
+@mixin background-color-location {
+  background-color: darken($background-html, 10%);
+}
+
+@mixin background-color-fonction {
+  background-color: darken($background-html, 3%);
+}
+
+@mixin background-color-footer {
+  background-color: darken($background-html, 80%);
+}
+
+@mixin logo-line-shadow {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 4px -3px inset;
+}
+
+@mixin border-item {
+  border-radius: 15px;
+}
+
+@mixin content-lighten {
+  background-color: lighten($color-primary, $amount: 35%);
+}
+
+@mixin cards-radius {
+  border-radius: 15px;
+}
+
+@mixin img-radius {
+  border-radius: 15px 15px 0px 0px;
+}
+
+@mixin margin-txt {
+  margin-left: 0.5rem;
+}
+
+@mixin txt-titles-padding-top {
+  padding-top: 30px;
+}

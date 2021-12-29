@@ -1,8 +1,38 @@
-.header {
+.header a {
   display: flex;
+  justify-content: center;
   align-items: center;
-  &__logo {
+  column-gap: 50px;
+  div:first-child {
+    display: flex;
+    flex-direction: row;
+  }
+  div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+// @include background-color-details;
+// @include padding-item;
+// @include center-item;
+// margin: 0;
+// width: 100%;
+// align-items: center;
+// div:first-child {
+//   position: absolute;
+//   left: 1.5rem;
+//   font-size: $font-size-arrow;
+// }
+// div:nth-child(2) {
+//   position: relative;
+// }
+
+.restaurant {
+  width: 100%;
+  height: 190px;
+  > img {
     width: 100%;
-    justify-content: center;
+    object-fit: cover;
   }
 }

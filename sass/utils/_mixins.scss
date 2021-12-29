@@ -13,6 +13,11 @@
   margin-top: 10px;
 }
 
+@mixin padding-item {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 @mixin center-text {
   text-align: center;
 }
@@ -66,4 +71,40 @@
 
 @mixin txt-titles-padding-top {
   padding-top: 30px;
+}
+
+// Menus details
+
+@mixin menus-title-display {
+  display: block;
+  text-transform: uppercase;
+  width: min-content;
+  position: relative;
+}
+
+@mixin underline-fifty {
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  left: 0;
+  bottom: -5px;
+  background: $color-tertiary;
+  display: block;
+  content: "";
+}
+
+@mixin center-details-style {
+  background-color: $background-html;
+  width: 90%;
+  width: 90%;
+  border-radius: 20px;
+  height: min-content;
+  margin: 0 auto 15px;
+}
+
+@mixin margin-menu-element {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

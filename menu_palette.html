@@ -1,33 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-            crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
     />
     <title>La palette du goût</title>
-</head>
-<body>
-<div class="loader"></div>
-<header class="header">
-    <div class="header__arrow">
-    <i class="fas fa-arrow-left"></i>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader__spinner"></div>
     </div>
-    <div class="header__logo">
-        <img class="logo__size" src="images/logo/ohmyfood.png" alt="logo" />
+    <!-- Header -->
+    <header>
+      <div class="header">
+        <a href="#">
+          <div>
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="header__logo">
+            <img class="logo__size" src="images/logo/ohmyfood.png" alt="logo" />
+          </div>
+        </a>
+      </div>
+    </header>
+    <!-- Photo -->
+    <div class="restaurant">
+      <img
+        src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="restaurant1"
+      />
     </div>
-</header>
-
-</body>
+    <!-- Cards Menus -->
+    <main>
+      <!-- Titre -->
+      <div class="placename">
+        <h1>La palette du goût</h1>
+        <div class="placename__like">
+          <i class="far fa-heart"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+      <!-- Entrées -->
+      <div class="entrance">
+        <h2>entrées</h2>
+        <div class="entrance__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Fricassé d'escargot</h3>
+                <h4>Au piment d'espelette</h4>
+              </div>
+              <div>
+                <p>25€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="entrance__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Foie gras de canard mi-cuit</h3>
+                <h4>Et ses copeaux de truffe noire</h4>
+              </div>
+              <div>
+                <p>35€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="entrance__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Oeuf au plat</h3>
+                <h4>Assaisonné à la truffe sur lit de caviar</h4>
+              </div>
+              <div>
+                <p>20€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Plats -->
+      <div class="dishes">
+        <h2>plats</h2>
+        <div class="dishes__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Filet de boeuf aux herbes</h3>
+                <h4>Accompagné de sa ribambelle de légumes</h4>
+              </div>
+              <div>
+                <p>40€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="dishes__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Parmentier de queue de boeuf</h3>
+                <h4>À la truffe noire sur sa purée de panais</h4>
+              </div>
+              <div>
+                <p>35€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="dishes__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Filet de turbot</h3>
+                <h4>Aux agrumes</h4>
+              </div>
+              <div>
+                <p>44€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Desserts -->
+      <div class="desserts">
+        <h2>desserts</h2>
+        <div class="desserts__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Paris-Brest</h3>
+                <h4>Revisité</h4>
+              </div>
+              <div>
+                <p>18€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="desserts__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Macaron au chocolat d'exception</h3>
+                <h4>Et glace à la vanille de Madagascar</h4>
+              </div>
+              <div>
+                <p>22€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="desserts__details">
+          <a href="#">
+            <div class="menu-case">
+              <div>
+                <h3>Mousse au chocolat</h3>
+                <h4>Au piment d'Espelette et à la truffe noire</h4>
+              </div>
+              <div>
+                <p>23€</p>
+                <div class="entrance__details__check">Check</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="order">
+        <button class="order__btn">Commander</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img
+          class="footer__logo__img"
+          src="/images/logo/ohmyfood.png"
+          alt="footer-logo"
+        />
+      </div>
+      <div class="footer__links">
+        <a class="footer__links__a" href="#"
+          ><i class="fas fa-utensils footer__links__fork"></i>Proposer un
+          restaurant</a
+        >
+        <a class="footer__links__a" href="#"
+          ><i class="fas fa-hands-helping footer__links__hands"></i>Devenir
+          partenaire</a
+        >
+        <a class="footer__links__a" href="#">Mentions légales</a>
+        <a class="footer__links__a" href="#">Contact</a>
+      </div>
+    </footer>
+  </body>
 </html>

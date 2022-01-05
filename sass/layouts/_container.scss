@@ -81,42 +81,47 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
+        // position: relative;
         .fas {
           position: absolute;
           opacity: 0;
           font-size: 24px;
           vertical-align: middle;
-          &:hover,
-          &:active {
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from($color-secondary),
+            to($color-primary)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          &:hover {
             transition: 0.2s ease;
-            transform: scale(1.01, 1.01);
-            background: -webkit-gradient(
-              linear,
-              left top,
-              left bottom,
-              from($color-secondary),
-              to($color-primary)
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            transform: scale(1.2);
             opacity: 1;
+            // z-index: 10;
           }
         }
         .far {
-          vertical-align: middle;
+          position: absolute;
           font-size: 25px;
         }
       }
-    }
-    .far {
-      position: relative;
     }
   }
   &__title {
     @include margin-txt;
     @include txt-titles-padding-top;
   }
+}
+
+.new {
+  @include new-restaurant;
+}
+
+article {
+  position: relative;
 }
 
 // span {

@@ -46,8 +46,6 @@ main {
       }
     }
   }
-
-  //   Menus details
   .entrance,
   .dishes,
   .desserts {
@@ -55,29 +53,109 @@ main {
     flex-direction: column;
     > h2 {
       @include menus-title-display;
+      margin-left: 10px;
     }
     > h2::before {
       @include underline-fifty;
     }
     &__details {
       @include center-details-style;
-      > a {
-        text-decoration: none;
-        color: inherit;
-        .menu-case {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          div:first-child {
-            display: flex;
-            flex-direction: column;
-          }
-          div:nth-child(2) {
-            display: flex;
-            align-items: center;
-          }
-        }
+    }
+    .details-1 {
+      animation: load-menu 1.8s ease-in;
+    }
+    .details-2 {
+      animation: load-menu 1.6s ease-in;
+    }
+    .details-3 {
+      animation: load-menu 1.4s ease-in;
+    }
+    .details-4 {
+      animation: load-menu 1.2s ease-in;
+    }
+    .details-5 {
+      animation: load-menu 1s ease-in;
+    }
+    .details-6 {
+      animation: load-menu 0.8s ease-in;
+    }
+    .details-7 {
+      animation: load-menu 0.6s ease-in;
+    }
+    .details-8 {
+      animation: load-menu 0.4s ease-in;
+    }
+    .details-9 {
+      animation: load-menu 0.2s ease-in;
+    }
+  }
+}
+.menu-case {
+  @include box-shadow;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 20px;
+  &:hover &__title__element {
+    margin: 0;
+    transition: 0.5s ease-in-out;
+  }
+  &:hover .fas {
+    animation-name: spin;
+    animation-duration: 1s;
+    // transform: rotate(45deg);
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    > h3 {
+      margin: 10px 0px 0px 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    > h4 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin: 5px 0px 16px 10px;
+    }
+    &__element {
+      display: flex;
+      flex-direction: row;
+      margin-right: -5rem;
+      > p {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right: 1rem;
+      }
+      &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        background-color: $color-tertiary;
+        color: white;
+        border-radius: 0px 15px 15px 0px;
+        font-size: 30px;
       }
     }
+  }
+}
+
+@keyframes load-menu {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

@@ -9,7 +9,7 @@
 }
 
 @mixin margin-item {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 10px;
 }
 
@@ -95,8 +95,7 @@
 
 @mixin center-details-style {
   background-color: $background-html;
-  width: 90%;
-  width: 90%;
+  width: 95%;
   border-radius: 20px;
   height: min-content;
   margin: 0 auto 15px;
@@ -107,4 +106,22 @@
   margin-right: 1rem;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+@mixin new-restaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: $color-tertiary;
+  width: 80px;
+  height: 30px;
+  border-radius: 3px;
+  color: darken($color-tertiary, 40%);
+}
+
+@mixin box-shadow {
+  box-shadow: rgba(191, 191, 191, 0.45) 0px 25px 20px -20px;
 }

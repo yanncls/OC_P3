@@ -225,8 +225,13 @@ body {
           align-items: center;
 }
 
+.container__flex > a {
+  text-decoration: none;
+  color: unset;
+  width: 28rem;
+}
+
 .container__card {
-  width: 95%;
   background-color: #fff;
   margin-bottom: 5px;
   margin-top: 10px;
@@ -257,7 +262,7 @@ body {
 }
 
 .container__card__desc div:nth-child(2) {
-  width: 40%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,7 +322,7 @@ body {
   color: #278870;
 }
 
-article {
+a article {
   position: relative;
 }
 
@@ -501,9 +506,7 @@ main .placename__like > i {
   font-size: 25px;
 }
 
-main .entrance,
-main .dishes,
-main .desserts {
+main .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,9 +516,7 @@ main .desserts {
           flex-direction: column;
 }
 
-main .entrance > h2,
-main .dishes > h2,
-main .desserts > h2 {
+main .menu > h2 {
   display: block;
   text-transform: uppercase;
   width: -webkit-min-content;
@@ -525,9 +526,7 @@ main .desserts > h2 {
   margin-left: 10px;
 }
 
-main .entrance > h2::before,
-main .dishes > h2::before,
-main .desserts > h2::before {
+main .menu > h2::before {
   position: absolute;
   height: 3px;
   width: 50px;
@@ -538,9 +537,7 @@ main .desserts > h2::before {
   content: "";
 }
 
-main .entrance__details,
-main .dishes__details,
-main .desserts__details {
+main .menu__details {
   background-color: #fff;
   width: 95%;
   border-radius: 20px;
@@ -548,69 +545,78 @@ main .desserts__details {
   height: -moz-min-content;
   height: min-content;
   margin: 0 auto 15px;
+  width: 23rem;
+  opacity: 0;
 }
 
-main .entrance .details-1,
-main .dishes .details-1,
-main .desserts .details-1 {
-  -webkit-animation: load-menu 1.8s ease-in;
-          animation: load-menu 1.8s ease-in;
+main .menu__details:nth-child(10) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-main .entrance .details-2,
-main .dishes .details-2,
-main .desserts .details-2 {
-  -webkit-animation: load-menu 1.6s ease-in;
-          animation: load-menu 1.6s ease-in;
+main .menu__details:nth-child(9) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
-main .entrance .details-3,
-main .dishes .details-3,
-main .desserts .details-3 {
-  -webkit-animation: load-menu 1.4s ease-in;
-          animation: load-menu 1.4s ease-in;
+main .menu__details:nth-child(8) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
-main .entrance .details-4,
-main .dishes .details-4,
-main .desserts .details-4 {
-  -webkit-animation: load-menu 1.2s ease-in;
-          animation: load-menu 1.2s ease-in;
+main .menu__details:nth-child(7) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
-main .entrance .details-5,
-main .dishes .details-5,
-main .desserts .details-5 {
-  -webkit-animation: load-menu 1s ease-in;
-          animation: load-menu 1s ease-in;
+main .menu__details:nth-child(6) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
-main .entrance .details-6,
-main .dishes .details-6,
-main .desserts .details-6 {
-  -webkit-animation: load-menu 0.8s ease-in;
-          animation: load-menu 0.8s ease-in;
+main .menu__details:nth-child(5) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
-main .entrance .details-7,
-main .dishes .details-7,
-main .desserts .details-7 {
-  -webkit-animation: load-menu 0.6s ease-in;
-          animation: load-menu 0.6s ease-in;
+main .menu__details:nth-child(4) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
-main .entrance .details-8,
-main .dishes .details-8,
-main .desserts .details-8 {
-  -webkit-animation: load-menu 0.4s ease-in;
-          animation: load-menu 0.4s ease-in;
+main .menu__details:nth-child(3) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
-main .entrance .details-9,
-main .dishes .details-9,
-main .desserts .details-9 {
-  -webkit-animation: load-menu 0.2s ease-in;
-          animation: load-menu 0.2s ease-in;
+main .menu__details:nth-child(2) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+main .menu__details:nth-child(1) {
+  -webkit-animation: load-menu 1s forwards;
+          animation: load-menu 1s forwards;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .menu-case {
@@ -710,12 +716,12 @@ main .desserts .details-9 {
 }
 
 @-webkit-keyframes load-menu {
-  from {
+  0% {
     opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -723,12 +729,12 @@ main .desserts .details-9 {
 }
 
 @keyframes load-menu {
-  from {
+  0% {
     opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);

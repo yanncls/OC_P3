@@ -125,3 +125,7 @@
 @mixin box-shadow {
   box-shadow: rgba(191, 191, 191, 0.45) 0px 25px 20px -20px;
 }
+
+@mixin show-delay {
+  animation: load-menu $time-delay ease;
+}

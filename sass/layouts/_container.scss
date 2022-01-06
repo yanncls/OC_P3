@@ -56,9 +56,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    > a {
+      text-decoration: none;
+      color: unset;
+      width: 28rem;
+    }
   }
   &__card {
-    width: 95%;
     background-color: $background-html;
     @include margin-item;
     @include cards-radius;
@@ -77,7 +81,7 @@
         position: relative;
       }
       div:nth-child(2) {
-        width: 40%;
+        width: 25%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -100,7 +104,6 @@
             transition: 0.2s ease;
             transform: scale(1.2);
             opacity: 1;
-            // z-index: 10;
           }
         }
         .far {
@@ -120,12 +123,6 @@
   @include new-restaurant;
 }
 
-article {
+a article {
   position: relative;
 }
-
-// span {
-//   position: relative;
-//   left: 300px;
-//   bottom: 45px;
-// }

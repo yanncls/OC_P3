@@ -46,9 +46,7 @@ main {
       }
     }
   }
-  .entrance,
-  .dishes,
-  .desserts {
+  .menu {
     display: flex;
     flex-direction: column;
     > h2 {
@@ -59,34 +57,16 @@ main {
       @include underline-fifty;
     }
     &__details {
+      // Loading menus animation
+      @for $i from 10 through 1 {
+        &:nth-child(#{$i}) {
+          animation: load-menu 1s forwards;
+          animation-delay: 0.1s * $i;
+        }
+      }
       @include center-details-style;
-    }
-    .details-1 {
-      animation: load-menu 1.8s ease-in;
-    }
-    .details-2 {
-      animation: load-menu 1.6s ease-in;
-    }
-    .details-3 {
-      animation: load-menu 1.4s ease-in;
-    }
-    .details-4 {
-      animation: load-menu 1.2s ease-in;
-    }
-    .details-5 {
-      animation: load-menu 1s ease-in;
-    }
-    .details-6 {
-      animation: load-menu 0.8s ease-in;
-    }
-    .details-7 {
-      animation: load-menu 0.6s ease-in;
-    }
-    .details-8 {
-      animation: load-menu 0.4s ease-in;
-    }
-    .details-9 {
-      animation: load-menu 0.2s ease-in;
+      width: 23rem;
+      opacity: 0;
     }
   }
 }
@@ -106,7 +86,6 @@ main {
   &:hover .fas {
     animation-name: spin;
     animation-duration: 1s;
-    // transform: rotate(45deg);
   }
   &__title {
     display: flex;
@@ -150,11 +129,15 @@ main {
 }
 
 @keyframes load-menu {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(20px);
   }
-  to {
+  // 50% {
+  //   opacity: 0.5;
+  //   transform: translateY(10px);
+  // }
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }

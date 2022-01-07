@@ -15,33 +15,10 @@ main {
       display: flex;
       align-items: center;
       .fas {
-        position: absolute;
-        margin-right: 3px;
-        opacity: 0;
-        font-size: 26px;
-        vertical-align: middle;
-        &:hover,
-        &:active {
-          transition: 0.2s ease;
-          transform: scale(0.9, 0.9);
-          background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from($color-secondary),
-            to($color-primary)
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          opacity: 1;
-        }
+        @include heart-animation;
       }
       .far {
-        vertical-align: middle;
-        font-size: 25px;
-        margin: 0;
-      }
-      > i {
+        position: absolute;
         font-size: 25px;
       }
     }
@@ -133,10 +110,6 @@ main {
     opacity: 0;
     transform: translateY(20px);
   }
-  // 50% {
-  //   opacity: 0.5;
-  //   transform: translateY(10px);
-  // }
   100% {
     opacity: 1;
     transform: translateY(0px);

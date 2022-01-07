@@ -1,8 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+}
+
+h2,
+h4 {
+  font-weight: 300;
 }
 
 .explorer,
@@ -220,15 +225,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .container__flex > a {
   text-decoration: none;
   color: unset;
-  width: 28rem;
 }
 
 .container__card {
@@ -387,6 +388,7 @@ a article {
           align-items: center;
   -webkit-column-gap: 50px;
           column-gap: 50px;
+  height: 4rem;
 }
 
 .header a div:first-child {
@@ -413,6 +415,7 @@ a article {
 
 .restaurant > img {
   width: 100%;
+  height: 17rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -479,30 +482,24 @@ main .placename__like {
 
 main .placename__like .fas {
   position: absolute;
-  margin-right: 3px;
   opacity: 0;
-  font-size: 26px;
+  font-size: 24px;
   vertical-align: middle;
-}
-
-main .placename__like .fas:hover, main .placename__like .fas:active {
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-  -webkit-transform: scale(0.9, 0.9);
-          transform: scale(0.9, 0.9);
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+main .placename__like .fas:hover {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   opacity: 1;
 }
 
 main .placename__like .far {
-  vertical-align: middle;
-  font-size: 25px;
-  margin: 0;
-}
-
-main .placename__like > i {
+  position: absolute;
   font-size: 25px;
 }
 

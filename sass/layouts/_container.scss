@@ -55,11 +55,10 @@
   &__flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     > a {
       text-decoration: none;
       color: unset;
-      width: 28rem;
     }
   }
   &__card {
@@ -87,24 +86,7 @@
         align-items: center;
         // position: relative;
         .fas {
-          position: absolute;
-          opacity: 0;
-          font-size: 24px;
-          vertical-align: middle;
-          background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from($color-secondary),
-            to($color-primary)
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          &:hover {
-            transition: 0.2s ease;
-            transform: scale(1.2);
-            opacity: 1;
-          }
+          @include heart-animation;
         }
         .far {
           position: absolute;

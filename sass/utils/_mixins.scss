@@ -129,3 +129,24 @@
 @mixin show-delay {
   animation: load-menu $time-delay ease;
 }
+
+@mixin heart-animation {
+  position: absolute;
+  opacity: 0;
+  font-size: 24px;
+  vertical-align: middle;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($color-secondary),
+    to($color-primary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover {
+    transition: 0.2s ease;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}

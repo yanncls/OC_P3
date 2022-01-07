@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
       rel="stylesheet"
     />
     <title>OH MY FOOD</title>
@@ -46,7 +46,9 @@
           Découvrez des restaurants d'expetion, séléctionnés par nos soins.
         </p>
         <div class="explorer">
-          <button class="explorer__btn">Explorer nos restaurants</button>
+          <form action="#anchor">
+            <button class="explorer__btn">Explorer nos restaurants</button>
+          </form>
         </div>
       </div>
     </header>
@@ -76,7 +78,7 @@
     <!-- Restaurants -->
     <section class="container">
       <div class="container__title">
-        <h2 class="container__title__txt">Restaurants</h2>
+        <h2 id="anchor" class="container__title__txt">Restaurants</h2>
       </div>
       <div class="container__flex">
         <a href="/menu_palette.html">
@@ -174,7 +176,9 @@
           partenaire</a
         >
         <a class="footer__links__a" href="#">Mentions légales</a>
-        <a class="footer__links__a" href="#">Contact</a>
+        <a class="footer__links__a" href="mailto:noreply@ohmyfood.com"
+          >Contact</a
+        >
       </div>
     </footer>
   </body>

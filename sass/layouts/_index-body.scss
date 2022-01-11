@@ -2,12 +2,19 @@
 .fonction {
   height: $fonction-height;
   @include column-item;
+  @include desktop {
+    height: fit-content;
+  }
   &__title {
     @include margin-txt;
     @include txt-titles-padding-top;
+    @include desktop {
+      text-align: center;
+      margin: 2rem;
+    }
   }
   &__border {
-    width: 90%;
+    width: 89%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     @include background-color-fonction;
     @include row-item;
@@ -15,9 +22,12 @@
     @include border-item;
     position: relative;
     justify-content: center;
+    @include desktop {
+      margin: 0 2rem 5rem 2rem;
+    }
     &__fa {
       position: absolute;
-      left: 50px;
+      left: 12%;
     }
     &:hover,
     &:focus {
@@ -46,25 +56,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 // menus display
 .container {
   @include background-color-details;
   height: 75rem;
+  @include desktop {
+    height: 27rem;
+  }
   &__flex {
     display: flex;
     flex-direction: column;
-
+    margin: 1rem;
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-around;
+    }
     > a {
       text-decoration: none;
       color: unset;
+      @include desktop {
+        width: 100%;
+      }
     }
   }
   &__card {
     background-color: $background-html;
     @include margin-item;
     @include cards-radius;
+    @include desktop {
+      margin: 1rem;
+      height: 17rem;
+    }
     > img {
       width: 100%;
       height: 160px;
@@ -98,6 +125,9 @@
   &__title {
     @include margin-txt;
     @include txt-titles-padding-top;
+    @include desktop {
+      text-align: center;
+    }
   }
 }
 

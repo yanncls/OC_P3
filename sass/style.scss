@@ -1,21 +1,24 @@
+// variables & functions
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
+
+// base & typography
 @import "./base/base";
 @import "./base/typography";
+@import "./base/breakpoints";
+
+// component
 @import "./components/buttons";
-@import "./layouts/header";
-@import "./layouts/logo";
-@import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
 @import "./components/like";
+
+// layouts
 @import "./layouts/footer";
-@import "./layouts/header-menu";
-@import "./layouts/menu";
-@import "./layouts/main";
+@import "./layouts/logo";
+@import "./layouts/menu-header";
+@import "./layouts/menu-content";
+@import "./layouts/index-header";
+@import "./layouts/index-body";
+
+// utilities
 @import "./utils/animations";

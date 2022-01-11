@@ -12,14 +12,18 @@
   background-color: #ffff;
   opacity: 0.9;
   position: fixed;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   inset: 0;
   z-index: 9999;
   animation: disappear 20ms $animation-duration forwards;
   &__spinner {
     position: fixed;
-    left: 41%;
-    top: 41%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 9999;
     border-top: 16px solid $color-primary;
     border-right: 16px solid $color-secondary;

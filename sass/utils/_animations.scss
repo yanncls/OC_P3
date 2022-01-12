@@ -10,7 +10,7 @@
 .loader {
   $animation-duration: 1.5s;
   background-color: #ffff;
-  opacity: 0.9;
+  opacity: 0.95;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -45,5 +45,16 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes load-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

@@ -24,8 +24,5 @@
     width: 100%;
     height: 17rem;
     object-fit: cover;
-    @include desktop {
-      height: 83rem;
-    }
   }
 }

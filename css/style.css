@@ -10,8 +10,7 @@ h4 {
   font-weight: 300;
 }
 
-.explorer,
-.order {
+.cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,8 +20,7 @@ h4 {
   padding-bottom: 2rem;
 }
 
-.explorer__btn,
-.order__btn {
+.cta button {
   width: 14rem;
   height: 3rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(20%, #ff79da), to(#9356dc));
@@ -147,12 +145,6 @@ h4 {
      object-fit: cover;
 }
 
-@media (min-width: 960px) {
-  .restaurant > img {
-    height: 83rem;
-  }
-}
-
 main {
   background-color: #e4e4e4;
   border-radius: 25px 25px 0px 0px;
@@ -164,7 +156,6 @@ main {
 
 @media (min-width: 960px) {
   main {
-    width: 55%;
     margin: 0 auto;
   }
 }
@@ -179,6 +170,15 @@ main .placename {
       justify-content: space-around;
 }
 
+@media (min-width: 960px) {
+  main .placename {
+    margin-left: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 main .placename > h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -190,6 +190,12 @@ main .placename__like {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 960px) {
+  main .placename__like {
+    margin-left: 66%;
+  }
 }
 
 main .placename__like .fas {
@@ -223,6 +229,12 @@ main .menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 960px) {
+  main .menu {
+    width: 30%;
+  }
 }
 
 main .menu > h2 {
@@ -260,71 +272,71 @@ main .menu__details {
 main .menu__details:nth-child(10) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
 }
 
 main .menu__details:nth-child(9) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 main .menu__details:nth-child(8) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
 }
 
 main .menu__details:nth-child(7) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 main .menu__details:nth-child(6) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
 }
 
 main .menu__details:nth-child(5) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
 }
 
 main .menu__details:nth-child(4) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 main .menu__details:nth-child(3) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
 }
 
 main .menu__details:nth-child(2) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 
 main .menu__details:nth-child(1) {
   -webkit-animation: load-menu 1s forwards;
           animation: load-menu 1s forwards;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .menu-case {
@@ -423,29 +435,14 @@ main .menu__details:nth-child(1) {
   font-size: 30px;
 }
 
-@-webkit-keyframes load-menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes load-menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+@media (min-width: 960px) {
+  .sub-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 1rem;
   }
 }
 
@@ -550,6 +547,28 @@ main .menu__details:nth-child(1) {
   }
 }
 
+.fonction > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 960px) {
+  .fonction > div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .fonction__border {
   width: 89%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -618,28 +637,6 @@ main .menu__details:nth-child(1) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.center-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (min-width: 960px) {
-  .center-item {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 
 .container {
@@ -818,7 +815,7 @@ a article {
 
 .loader {
   background-color: #ffff;
-  opacity: 0.9;
+  opacity: 0.95;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -872,6 +869,32 @@ a article {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes load-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes load-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 /*# sourceMappingURL=style.css.map */

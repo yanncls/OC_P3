@@ -10,19 +10,24 @@ main {
   .placename {
     display: flex;
     align-content: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     @include desktop {
       margin-left: 1rem;
-      justify-content: flex-start;
     }
     > h1 {
       font-family: "Shrikhand", cursive;
+      margin-left: 10px;
+      width: 65%;
+      @include desktop {
+        width: 26%;
+      }
     }
     &__like {
       display: flex;
       align-items: center;
+      margin-left: 10%;
       @include desktop {
-        margin-left: 66%;
+        margin-left: 67%;
       }
       .fas {
         @include heart-animation;

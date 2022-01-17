@@ -1,16 +1,13 @@
 // variables & functions
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
 
 // base & typography
-@import "./base/base";
 @import "./base/typography";
 @import "./base/breakpoints";
 
 // component
 @import "./components/cta";
-@import "./components/like";
 
 // layouts
 @import "./layouts/footer";

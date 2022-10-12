@@ -4,6 +4,8 @@
 Un site de commande en ligne de plat à emporter, 
 inspiré des applications de livraison de repas.
 
+Des animations pure css ont été implémentées avec un loader. 
+
 Réalisé avec #html #css #sass
 
 
